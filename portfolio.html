@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio | Bashar Fouda</title>
     <link rel="icon" type="image/x-icon" href="./images/logo 1.png">
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -11,28 +11,19 @@
 <body>
     <section class="gradient-background">
         <div class="container">
-            <header class="d-flex flex-wrap justify-content-center justify-content-md-between box-sizing mb-4">
-              <div class="col-md-12 mb-1 mb-0 md-1">
-                <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <header class="site-header d-flex flex-wrap align-items-center justify-content-between gap-3 py-3">
+                <a href="./index.html" aria-label="Bashar Fouda home">
+                    <img src="./images/logo3.png" class="site-logo" alt="Bashar Fouda logo">
                 </a>
-              </div>
-              <div class="d-inline-flex">
-              <img src="./images/logo3.png" height="55px" width="55px">
-
-              </div>
-
-               
-        
-              <ul class="nav col-12 col-md-auto mb-2  mb-md-0">
-                <li><a href="./index.html" class="nav-link px-4 link-light"><h5>Home</h5></a></li>
-                <li><a href="./about.html" class="nav-link px-4 link-light"><h5>About</h5></a></li>
-                <li><a href="./portfolio.html" class="nav-link px-4 link-light"><h5>Portfolio</h5></a></li>
-                <li><a href="contact.html" class="nav-link px-4 link-light"><h5>Contact</h5></a></li>
-              </ul>
-        
-              <div class="col-md-3 text-end" id="width">
-                <button type="button" class="btn btn-outline-light btn-lg ">Hire me</button>
-              </div>
+                <nav aria-label="Primary navigation">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a href="./index.html" class="nav-link px-3 link-light">Home</a></li>
+                        <li class="nav-item"><a href="./about.html" class="nav-link px-3 link-light">About</a></li>
+                        <li class="nav-item"><a href="./portfolio.html" class="nav-link px-3 link-light">Portfolio</a></li>
+                        <li class="nav-item"><a href="./contact.html" class="nav-link px-3 link-light">Contact</a></li>
+                    </ul>
+                </nav>
+                <a class="btn btn-outline-light btn-lg" href="./contact.html">Hire me</a>
             </header>
           </div>
         <div class="container col-xxl-12">
@@ -46,68 +37,228 @@
      </section>
 
 
-     <section>
-      <div class="container text-center mt-5 mb-5 align-items-center">
-        <div>
-          <h2 class="border-bottom text-body-emphasis fw-bold  mb-5">My Works</h2>
+     <section class="portfolio-gallery py-5">
+      <div class="container">
+        <div class="portfolio-heading">
+          <h2 class="section-heading">My Works</h2>
+          <p>Explore a selection of websites and digital experiences.</p>
         </div>
-        <div class="row justify-content-around ">
-          <div class="col-5 mb-3 p-0">
-            <img src="./images/portoflio-1.jpg" class="portfolio" height="300" width="400">
+
+        <div class="portfolio-carousel" data-depth-carousel role="region" aria-roledescription="carousel" aria-label="Selected portfolio projects" tabindex="0">
+          <div class="portfolio-stage" data-carousel-stage>
+            <button class="portfolio-slide" type="button" aria-label="Show co-working space project" data-project-title="Co-working space">
+              <img src="./images/portoflio-1.jpg" alt="Co-working space website with a blue and violet landing page" draggable="false" fetchpriority="high">
+            </button>
+            <button class="portfolio-slide" type="button" aria-label="Show courier website project" data-project-title="Courier website" aria-hidden="true" tabindex="-1">
+              <img src="./images/portfolio-2.jpg" alt="Courier service website with a bold violet and orange design" draggable="false" loading="lazy">
+            </button>
+            <button class="portfolio-slide" type="button" aria-label="Show freelance copywriter website project" data-project-title="Freelance copywriter" aria-hidden="true" tabindex="-1">
+              <img src="./images/portfolio-3.jpg" alt="Freelance copywriter portfolio with a portrait and editorial typography" draggable="false" loading="lazy">
+            </button>
+            <button class="portfolio-slide" type="button" aria-label="Show furniture store project" data-project-title="Furniture store" aria-hidden="true" tabindex="-1">
+              <img src="./images/portfolio-4.jpg" alt="Furniture store website featuring a contemporary kitchen" draggable="false" loading="lazy">
+            </button>
+            <button class="portfolio-slide" type="button" aria-label="Show food truck website project" data-project-title="Food truck website" aria-hidden="true" tabindex="-1">
+              <img src="./images/portfolio-5.png" alt="Food truck website with a warm red background and yellow truck" draggable="false" loading="lazy">
+            </button>
+            <button class="portfolio-slide" type="button" aria-label="Show mountain travel website project" data-project-title="Mountain travel website" aria-hidden="true" tabindex="-1">
+              <img src="./images/portfolio-6.png" alt="Mountain travel website with a muted blue-green landscape" draggable="false" loading="lazy">
+            </button>
           </div>
-          <div class="col-5 mb-3 p-0">
-            <img src="./images/portfolio-2.jpg" class="portfolio" height="300" width="400">
+
+          <div class="portfolio-controls">
+            <button class="portfolio-arrow" type="button" data-carousel-prev aria-label="Previous project">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                <path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="portfolio-current" aria-live="polite">
+              <span class="portfolio-count" data-carousel-count>01 / 06</span>
+              <span class="portfolio-project-title" data-carousel-title>Co-working space</span>
+            </div>
+            <button class="portfolio-arrow" type="button" data-carousel-next aria-label="Next project">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="portfolio-indicators" role="group" aria-label="Choose a project">
+            <button class="portfolio-indicator is-active" type="button" aria-label="Show project 1: Co-working space" aria-pressed="true"></button>
+            <button class="portfolio-indicator" type="button" aria-label="Show project 2: Courier website" aria-pressed="false"></button>
+            <button class="portfolio-indicator" type="button" aria-label="Show project 3: Freelance copywriter" aria-pressed="false"></button>
+            <button class="portfolio-indicator" type="button" aria-label="Show project 4: Furniture store" aria-pressed="false"></button>
+            <button class="portfolio-indicator" type="button" aria-label="Show project 5: Food truck website" aria-pressed="false"></button>
+            <button class="portfolio-indicator" type="button" aria-label="Show project 6: Mountain travel website" aria-pressed="false"></button>
           </div>
         </div>
-        <div class="row justify-content-between" >
-          <div class="col-4 mb-3 p-0">
-            <img src="./images/portfolio-3.jpg" class="portfolio" height="300" width="400">
-          </div>
-          <div class="col-4 mb-3 p-0">
-            <img src="./images/portfolio-4.jpg" class="portfolio" height="300" width="400">
-          </div>
-        </div>
-        <div class="row justify-content-evenly">
-          <div class="col-4 mb-3 p-0">
-            <img src="./images/portfolio-5.png" class="portfolio" height="300" width="400">
-          </div>
-          <div class="col-4 mb-3 p-0">
-            <img src="./images/portfolio-6.png" class="portfolio" height="300" width="400">
-          </div>
-        </div>
-        <hr>
       </div>
      </section>
-     
+        <footer id="footer" class="gradient-background site-footer py-4">
+            <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+                <p class="mb-0">© 2023 All rights reserved.</p>
+                <nav aria-label="Footer navigation">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="./index.html" class="nav-link p-0 px-2 text-body-emphasis">Home</a></li>
+                        <li class="nav-item"><a href="./about.html" class="nav-link p-0 px-2 text-body-emphasis">About</a></li>
+                        <li class="nav-item"><a href="./portfolio.html" class="nav-link p-0 px-2 text-body-emphasis">Portfolio</a></li>
+                        <li class="nav-item"><a href="./contact.html" class="nav-link p-0 px-2 text-body-emphasis">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
 
+<script>
+  (() => {
+    const carousel = document.querySelector("[data-depth-carousel]");
+    const stage = carousel?.querySelector("[data-carousel-stage]");
 
+    if (!carousel || !stage) {
+      return;
+    }
 
+    const slides = Array.from(stage.querySelectorAll(".portfolio-slide"));
+    const indicators = Array.from(carousel.querySelectorAll(".portfolio-indicator"));
+    const countLabel = carousel.querySelector("[data-carousel-count]");
+    const titleLabel = carousel.querySelector("[data-carousel-title]");
+    const slideCount = slides.length;
+    let activeIndex = 0;
+    let position = 0;
+    let dragState = null;
+    let suppressClick = false;
 
+    const wrapIndex = (index) => (index % slideCount + slideCount) % slideCount;
+    const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
+    const render = () => {
+      const compact = stage.clientWidth < 680;
+      const spread = compact ? 32 : 108;
+      const depth = compact ? 78 : 190;
+      const tilt = 14;
 
+      slides.forEach((slide, index) => {
+        let distance = index - position;
+        distance = (distance % slideCount + slideCount) % slideCount;
+        if (distance > slideCount / 2) {
+          distance -= slideCount;
+        }
 
+        const behind = Math.max(0, distance);
+        const opacity = distance < 0 ? Math.max(0, 1 + distance) : 1;
+        const visible = Math.abs(distance) <= 3.5;
+        const rotation = tilt * clamp(distance, 0, 1);
 
-     <section id="footer" class="gradient-background">
-        <div class="container">
-         <footer class="boob">
-       
-           <div class="d-flex flex-column flex-sm-row ">
-             <p class="text-start">© 2023 All rights reserved.</p>
-             
-               <div class=" d-flex flex-row col-md-6 mb-3 justify-content-center ">
-                 <ul class="nav flex-row">
-                   <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-body-emphasis">Home</a></li>
-                   <li class="nav-item mb-2"><a href="./about.html" class="nav-link p-0 text-body-emphasis">About</a></li>
-                   <li class="nav-item mb-2"><a href="./portfolio.html" class="nav-link p-0 text-body-emphasis">portfolio</a></li>
-                   <li class="nav-item mb-2"><a href="./contact.html" class="nav-link p-0 text-body-emphasis">contact</a></li>
-                 </ul>
-               </div>
-           </div>
-         </footer>
-       </div>
-       </section>
+        slide.style.transform = `translate(-50%, -50%) translateX(${(spread * distance).toFixed(1)}px) translateZ(${(-depth * distance).toFixed(1)}px) rotateY(${rotation.toFixed(1)}deg)`;
+        slide.style.opacity = visible ? opacity.toFixed(2) : "0";
+        slide.style.filter = `brightness(${Math.max(0.28, 1 - behind * 0.18).toFixed(2)}) blur(${Math.min(4, behind * 0.7).toFixed(1)}px)`;
+        slide.style.zIndex = String(Math.round(100 - distance * 10));
+        slide.style.pointerEvents = distance >= 0 && distance <= 3 ? "auto" : "none";
+        slide.setAttribute("aria-hidden", String(index !== activeIndex));
+        slide.tabIndex = index === activeIndex ? 0 : -1;
+      });
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      slides.forEach((slide, index) => {
+        slide.classList.toggle("is-active", index === activeIndex);
+      });
 
+      indicators.forEach((indicator, index) => {
+        const isActive = index === activeIndex;
+        indicator.classList.toggle("is-active", isActive);
+        indicator.setAttribute("aria-pressed", String(isActive));
+      });
+
+      if (countLabel) {
+        countLabel.textContent = `${String(activeIndex + 1).padStart(2, "0")} / ${String(slideCount).padStart(2, "0")}`;
+      }
+      if (titleLabel) {
+        titleLabel.textContent = slides[activeIndex].dataset.projectTitle || `Project ${activeIndex + 1}`;
+      }
+    };
+
+    const select = (target) => {
+      const nextIndex = wrapIndex(target);
+      let difference = nextIndex - position;
+      if (difference > slideCount / 2) {
+        difference -= slideCount;
+      } else if (difference < -slideCount / 2) {
+        difference += slideCount;
+      }
+      position += difference;
+      activeIndex = nextIndex;
+      render();
+    };
+
+    carousel.querySelector("[data-carousel-prev]")?.addEventListener("click", () => select(activeIndex - 1));
+    carousel.querySelector("[data-carousel-next]")?.addEventListener("click", () => select(activeIndex + 1));
+    indicators.forEach((indicator, index) => indicator.addEventListener("click", () => select(index)));
+
+    slides.forEach((slide, index) => {
+      slide.addEventListener("click", () => {
+        if (suppressClick) {
+          suppressClick = false;
+          return;
+        }
+        select(index);
+      });
+    });
+
+    carousel.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        select(activeIndex - 1);
+      } else if (event.key === "ArrowRight") {
+        event.preventDefault();
+        select(activeIndex + 1);
+      }
+    });
+
+    stage.addEventListener("pointerdown", (event) => {
+      if (event.button !== 0 || event.target.closest("button") === null) {
+        return;
+      }
+      dragState = { startX: event.clientX, startPosition: position, moved: false };
+    });
+
+    stage.addEventListener("pointermove", (event) => {
+      if (!dragState) {
+        return;
+      }
+      const deltaX = event.clientX - dragState.startX;
+      if (!dragState.moved && Math.abs(deltaX) > 5) {
+        dragState.moved = true;
+        stage.classList.add("is-dragging");
+        stage.setPointerCapture(event.pointerId);
+      }
+      if (!dragState.moved) {
+        return;
+      }
+      event.preventDefault();
+      const step = Math.max(stage.clientWidth * 0.2, 64);
+      position = dragState.startPosition - deltaX / step;
+      render();
+    });
+
+    const finishDrag = () => {
+      if (!dragState) {
+        return;
+      }
+      const moved = dragState.moved;
+      dragState = null;
+      stage.classList.remove("is-dragging");
+      if (moved) {
+        suppressClick = true;
+        select(Math.round(position));
+        window.setTimeout(() => {
+          suppressClick = false;
+        }, 0);
+      }
+    };
+
+    stage.addEventListener("pointerup", finishDrag);
+    stage.addEventListener("pointercancel", finishDrag);
+    window.addEventListener("resize", render);
+    render();
+  })();
+</script>
 </body>
 </html>
