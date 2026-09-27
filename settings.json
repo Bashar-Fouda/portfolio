@@ -1,0 +1,4 @@
+{
+    "livePreview.defaultPreviewPath": "/index.html",
+    "chat.experimental.collectInstructionsInExtension": true
+}
